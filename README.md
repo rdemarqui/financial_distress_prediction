@@ -13,4 +13,4 @@ To do
 ### Results and Conclusions
 To do
 ### References
-* https://www.kaggle.com/code/rikdifos/credit-card-approval-prediction-using-ml
+To do
