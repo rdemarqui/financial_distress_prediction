@@ -1,9 +1,11 @@
-## Credit score classification
-Credit score classification from Kaggle. Source: https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction
+## Financial Distress Prediction
+Predicting the probability that somebody will experience financial distress in the next two years. 
+
+Source: https://www.kaggle.com/competitions/GiveMeSomeCredit
 ### Overview
 To do
 ### Objectives
-To do
+**Evaluation:** AUC
 ### Tecnologies Used
 To do
 ### About the Data
