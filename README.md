@@ -38,7 +38,7 @@ Below, some statistics:
 
 
 ### Methodology
-Eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance, we trained the algorithms with two methodologies, firstly with oversampling and the secondly with unbalanced. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing algorithm. Finally, we use SHAP to verify which attributes were most important to algorithm.
+Eleven classification algorithms were tested in order to choose the one with the best performance. Attributes **MonthlyIncome** and **NumberOfDependents** had null values and median was used to fill. Due to data imbalance, we trained the algorithms with two methodologies, firstly with oversampling and the secondly with unbalanced. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing algorithm. Finally, we use SHAP to verify which attributes were most important to algorithm.
 ### Results and Conclusions
 As can be seen below, oversampling did more harm than good to the performance of most algorithms. Therefore, we chose not to use balanced data to train.
 
