@@ -49,7 +49,7 @@ As can be seen below, oversampling did more harm than good to the performance of
       
 **LGBMClassifier** was choosen given it's best result compared to others. Kaggle returned AUC scores ~0.867 for private score and ~0.861 for public score. It's a good result, considering that winer got 0.86955.
 
-Analyzing chart below, we can conclude that the model considered **RevolvingUtilizationOfUnsecuredLines** as the most important feature, followed by **NumberOfTime30-59DaysPastDueNotWorse** and **age**. We conclude that customers with high credit utilization, a history of late payments and a young age are much more prone to future financial difficulties.
+Analyzing chart below, we can see that the model considered **RevolvingUtilizationOfUnsecuredLines** as the most important feature, followed by **NumberOfTime30-59DaysPastDueNotWorse** and **age**. We conclude that customers with high credit utilization, a history of late payments and a young age are much more prone to future financial difficulties.
 
 <p align="center">
 <img src="images\shap.png" class="center" width="60%"/>
