@@ -55,7 +55,7 @@ Analyzing chart below, we can conclude that the model considered **RevolvingUtil
 <img src="images\shap.png" class="center" width="60%"/>
 </p>
 
-**Future improvements proposal:** We filled null values with the median of the attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, newer customers might have salaries below the median. An improvement that could be done is use a median by age instead of full dataset. Othar thing that could be done to it's make a stack with top 3 models. We let that for future studies.
+**Future improvements proposal:** We filled null values with the median of the attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, younger customers might have salaries below the median. An improvement that could be done is use a median by age instead of full dataset. Othar thing that could be done to it's make a stack with top 3 models. We let that for future studies.
 
 ### References
 * https://www.kaggle.com/competitions/GiveMeSomeCredit
