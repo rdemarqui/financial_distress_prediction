@@ -36,7 +36,7 @@ Historical data are provided on 250,000 borrowers.
 |NumberOfDependents|Number of dependents in family|integer|
 
 ### Methodology
-Exploring the dataset, we found that attributes **MonthlyIncome** and **NumberOfDependents** had null values and median was used to fill them. After that, using k-fold cross-validation  technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance, we trained applying two methodologies, firstly with oversampling and the secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we use SHAP to verify which attributes were most important to model.
+Exploring the dataset, we found that attributes **MonthlyIncome** and **NumberOfDependents** had null values and median was used to fill them. After that, using stratified k-fold cross-validation  technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance, we trained applying two methodologies, firstly with oversampling and the secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we use SHAP to verify which attributes were most important to model.
 
 The complete study can be replicated on the notebook `Financial_distress_prediction.ipynb`, available [here](https://github.com/rdemarqui/financial_distress_prediction/blob/main/Financial_distress_prediction.ipynb).
 
