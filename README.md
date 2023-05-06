@@ -49,13 +49,13 @@ As can be seen below, oversampling did more harm than good to the performance of
       
 **LGBMClassifier** was choosen given it's best result compared to others. Kaggle returned AUC scores ~0.867 for private score and ~0.861 for public score. It's a good result, considering that winer got 0.86955.
 
-Analyzing chart below, we can see that the model considered **RevolvingUtilizationOfUnsecuredLines** as the most important feature, followed by **NumberOfTime30-59DaysPastDueNotWorse** and **age**. We conclude that customers with high credit utilization, a history of late payments and a young age are much more prone to future financial difficulties.
+Analyzing chart below, we can see that the model considered **RevolvingUtilizationOfUnsecuredLines** as the most important feature, followed by **NumberOfTime30-59DaysPastDueNotWorse** and **age**. We found that customers with high credit utilization, a history of late payments, and young age are much more likely to experience future financial difficulties.
 
 <p align="center">
 <img src="images\shap.png" class="center" width="60%"/>
 </p>
 
-**Future improvements proposal:** We filled null values with the median of the attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, younger customers might have salaries below the median. An improvement that could be done is use a median by age instead of full dataset. Other thing that could be done it's make a stacking with top ranked models or the best one with differents seeds. We let that for future studies.
+**Future improvements proposal:** We filled null values with the median of their respective attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, younger customers might have salaries below the median and no dependents. An improvement that could be done is use a median by age instead of median of full column. Other thing that could be done it's to make a stacking with top ranked models or the best one with differents seeds. We let that for future studies.
 
 ### References
 * https://www.kaggle.com/competitions/GiveMeSomeCredit
