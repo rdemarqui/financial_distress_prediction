@@ -1,5 +1,9 @@
 ## Financial Distress Prediction
 
+<p align="center">
+<img src="images\cover.jpg" class="center" width="50%"/>
+</p>
+
 ### Overview
 This is a Kaggle competition that requires participants to improve on the state of the art in credit scoring, by predicting the probability that somebody will experience financial distress in the next two years.
 
