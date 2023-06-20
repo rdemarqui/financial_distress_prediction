@@ -59,7 +59,7 @@ Analyzing chart below, we can see that the model considered **RevolvingUtilizati
 <img src="images\shap.png" class="center" width="60%"/>
 </p>
 
-**Future improvements proposal:** We filled null values with the median of their respective attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, younger customers might have salaries below the median and no dependents. An improvement that could be done is use a median by age instead of median of full column. We tried oversampling method, but undersampling could be tried too. Instead use only one model, other thing that could be done it's to make a stacking with top ranked models or the best one with differents seeds. We let that for future studies.
+**Future improvements proposal:** We filled null values with the median of their respective attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, younger customers might have salaries below the median and no dependents. An improvement that could be done is use a median by age instead of median of full column. We tried oversampling method, but undersampling could be tried too. Other thing that could be done it's, instead use only one model, make a stacking with top ranked models or the best one with differents seeds. We let that for future studies.
 
 ### References
 * https://www.kaggle.com/competitions/GiveMeSomeCredit
