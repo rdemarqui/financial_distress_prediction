@@ -23,7 +23,7 @@ Build a model that borrowers can use to help make the best financial decisions. 
 * lightgbm 3.3.5
 
 ### About the Data
-Historical data are provided on 250,000 borrowers.
+Historical data of 250,000 borrowers were provided, as described below.
 
 |Variable Name|Description|Type|
 |---|---|---|
