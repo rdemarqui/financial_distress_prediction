@@ -45,7 +45,7 @@ Exploring the dataset, we found that attributes **MonthlyIncome** and **NumberOf
 The complete study can be replicated on the notebook `Financial_distress_prediction.ipynb`, available [here](https://github.com/rdemarqui/financial_distress_prediction/blob/main/Financial_distress_prediction.ipynb).
 
 ### Results and Conclusions
-As can be seen below, oversampling did more harm than good to the performance of most algorithms. Therefore, we chose not to use balanced data to train.
+As can be seen below, oversampling (mean_over) did more harm than good to the performance of most algorithms. Therefore, we chose not to use balanced data to train.
 
 <p align="center">
 <img src="images\performance_table.png" class="center" width="50%"/>
