@@ -11,16 +11,16 @@ This is a Kaggle competition that requires participants to improve on the state 
 Build a model that borrowers can use to help make the best financial decisions. **Evaluation:** AUC
 
 ### Tecnologies Used
-* python 3.9.16
-* pandas 1.5.3
-* numpy 1.22.4
-* matplotlib 3.7.1
-* sklearn 1.2.2
-* skopt 0.9.0
-* imblearn 0.10.1
-* shap 0.41.0
-* xgboost 1.7.5
-* lightgbm 3.3.5
+* `python 3.9.16`
+* `pandas 1.5.3`
+* `numpy 1.22.4`
+* `matplotlib 3.7.1`
+* `sklearn 1.2.2`
+* `skopt 0.9.0`
+* `imblearn 0.10.1`
+* `shap 0.41.0`
+* `xgboost 1.7.5`
+* `lightgbm 3.3.5`
 
 ### About the Data
 Historical data of 250,000 borrowers were provided, as described below.
