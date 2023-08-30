@@ -1,7 +1,9 @@
-## Financial Distress Prediction
+<div align="center">
+  <h1>Financial Distress Prediction</h1>
+</div>
 
 <p align="center">
-<img src="images\cover.jpg" class="center" width="50%"/>
+<img src="images\cover.jpg" class="center" width="40%"/>
 </p>
 
 ### Overview
