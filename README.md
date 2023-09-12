@@ -7,7 +7,9 @@
 </p>
 
 ### Overview
-This is a Kaggle competition that requires participants to improve on the state of the art in credit scoring, by predicting the probability that somebody will experience financial distress in the next two years.
+Credit score is crucial for companies as it helps them assess the creditworthiness of potential customers and partners. It enables informed decisions regarding loans, partnerships, and credit terms, ultimately minimizing financial risks and promoting responsible financial management.
+
+This work was based on a Kaggle competition that requires participants to improve on the state of the art in credit scoring, by predicting the probability that somebody will experience financial distress in the next two years.
 
 ### Objectives
 Build a model that borrowers can use to help make the best financial decisions. **Evaluation:** AUC
