@@ -47,7 +47,7 @@ Historical data of 250,000 borrowers were provided, as described below.
 Exploring the dataset, we found that attributes **MonthlyIncome** and **NumberOfDependents** had null values and median was used to fill them. Also checking feature correlation we've seen that the features `NumberOfTime30-59DaysPastDueNotWorse`, `NumberOfTime60-89DaysPastDueNotWorse` and `NumberOfTimes90DaysLate`had a high correlation. In this case, we could maintain only `NumberOfTime30-59DaysPastDueNotWorse`, whereas borrowers who had been late for longer periods were late first in this shorter interval, but in previous tests we've seen that it costs some accuracy points. As accuracy is a sensitive theme in this type of case, we decided to maintain all features.
 
 <p align="center">
-<img src="images\feature_correlation.png" class="center" width="65%"/>
+<img src="images\feature_correlation.png" class="center" width="70%"/>
 </p>
 
 After that, using stratified k-fold cross-validation  technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance (N=93% and Y=7%), we trained applying two methodologies, firstly with oversampling and secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we use SHAP to verify which attributes were most important to model.
