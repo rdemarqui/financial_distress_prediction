@@ -44,7 +44,13 @@ Historical data of 250,000 borrowers were provided, as described below.
 |NumberOfDependents|Number of dependents in family|integer|
 
 ### Methodology
-Exploring the dataset, we found that attributes **MonthlyIncome** and **NumberOfDependents** had null values and median was used to fill them. After that, using stratified k-fold cross-validation  technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance (N=93% and Y=7%), we trained applying two methodologies, firstly with oversampling and secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we use SHAP to verify which attributes were most important to model.
+Exploring the dataset, we found that attributes **MonthlyIncome** and **NumberOfDependents** had null values and median was used to fill them. Also checking feature correlation we've seen that the features `NumberOfTime30-59DaysPastDueNotWorse`, `NumberOfTime60-89DaysPastDueNotWorse` and `NumberOfTimes90DaysLate`had a high correlation so we maintained only `NumberOfTime30-59DaysPastDueNotWorse` whereas borrower who had been late for longer periods was late first in this shorter interval.
+
+<p align="center">
+<img src="images\feature_correlation.png" class="center" width="50%"/>
+</p>
+
+After that, using stratified k-fold cross-validation  technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance (N=93% and Y=7%), we trained applying two methodologies, firstly with oversampling and secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we use SHAP to verify which attributes were most important to model.
 
 The complete study can be replicated on the notebook `Financial_distress_prediction.ipynb`, available [here](https://github.com/rdemarqui/financial_distress_prediction/blob/main/Financial_distress_prediction.ipynb).
 
@@ -60,7 +66,7 @@ As can be seen below, oversampling (mean_over) did more harm than good to the pe
 Analyzing chart below, we can see that the model considered **RevolvingUtilizationOfUnsecuredLines** as the most important feature, followed by **NumberOfTime30-59DaysPastDueNotWorse** and **age**. We found that customers with high credit utilization, a history of late payments, and young age are much more likely to experience future financial difficulties.
 
 <p align="center">
-<img src="images\shap.png" class="center" width="60%"/>
+<img src="images\shap.png" class="center" width="50%"/>
 </p>
 
 **Future improvements proposal:** We filled null values with the median of their respective attributes, but MonthlyIncome and NumberOfDependents might still be related to the customer's life stage, for example, younger customers might have salaries below the median and no dependents. An improvement that could be done is use a median by age instead of median of full column. We tried oversampling method, but undersampling could be tried too. Other thing that could be done it's, instead use only one model, make a stacking with top ranked models or the best one with differents seeds. We let that for future studies.
