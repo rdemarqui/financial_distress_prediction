@@ -50,7 +50,7 @@ Exploring the dataset, we found that attributes `MonthlyIncome` and `NumberOfDep
 <img src="images\feature_correlation.png" class="center" width="70%"/>
 </p>
 
-After that, using stratified k-fold cross-validation  technique, eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance (N=93% and Y=7%), we trained applying two methodologies, firstly with oversampling and secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we used SHAP to verify which attributes were most important to the model.
+After that, using stratified k-fold cross-validation technique, applying [no free lunch theorem](https://en.wikipedia.org/wiki/No_free_lunch_theorem), eleven classification algorithms were tested in order to choose the one with the best performance. Due to data imbalance (N=93% and Y=7%), we trained applying two methodologies, firstly with oversampling and secondly with unbalanced data. Then applying optimisation (Bayesian and randomic), we tuned the hyperparameters of the best performing model. Finally, we used SHAP to verify which attributes were most important to the model.
 
 The complete study can be replicated in the notebook `Financial_distress_prediction.ipynb`, available [here](https://github.com/rdemarqui/financial_distress_prediction/blob/main/Financial_distress_prediction.ipynb).
 
