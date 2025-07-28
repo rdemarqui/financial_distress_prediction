@@ -69,7 +69,7 @@ As can be seen below, oversampling (mean_over) did more harm than good to the pe
 <img src="images\performance_table.png" class="center" width="50%"/>
 </p>
       
-**LGBMClassifier** <p align="justify"> was chosen given it's best result compared to others. Kaggle returned AUC scores of ~0.867 for private score and ~0.861 for public score. It's a good result, considering that winer got 0.86955.
+<p align="justify"> LGBMClassifier was chosen given it's best result compared to others. Kaggle returned AUC scores of ~0.867 for private score and ~0.861 for public score. It's a good result, considering that winer got 0.86955.
 
 <p align="justify">
 Analyzing chart below, we can see that the model considered <code>RevolvingUtilizationOfUnsecuredLines</code> as the most important feature, followed by <code>NumberOfTime30-59DaysPastDueNotWorse</code> and <code>age</code>. We found that customers with high credit utilization, a history of late payments, and a young age are much more likely to experience future financial difficulties.
